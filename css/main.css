@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: #007AF3;
+  --primary-color: #288f08;
 }
 
 body {
-  background: #F2F2F2;
+  background: #cec4c4;
   margin: 0;
   font-family: 'Poppins';
 }
 
 .navbar {
-  background: white;
+  background: #A7A7A7;
   padding: 1em;
 }
 
@@ -54,7 +54,7 @@ section {
   padding: 5em 2em;
 }
 
-.hero {
+#hero {
   text-align: center;
 }
 
@@ -92,13 +92,14 @@ section {
 }
 
 .hero-img {
-  width: 70%;
+  width: 60% ;  
   margin-top: 3em;
 }
 
-section.features-section {
+section#features-section {
   background: #20272E;
   color: white;
+  padding: 2.5em;
 }
 
 ul.features-list {
@@ -128,9 +129,24 @@ ul.features-list li:before {
   margin-right: .5em;
 }
 
-.features-section img {
+section#features-section h2
+{
+  text-align: center;
+  font-size: 3em;
+  
+  
+}
+
+#features-section img {
   display: none;
 }
+
+/*.consultorio
+{  
+  margin-left: 15em;
+  width: 90%;
+
+}*/
 
 .testimonials-section {
   background: var(--primary-color);
@@ -138,7 +154,7 @@ ul.features-list li:before {
 }
 
 .testimonials-section li {
-  background: #006BD6;
+  background: #1f9e30;
   text-align: center;
   padding: 2em 1em;
   width: 80%;
@@ -149,14 +165,11 @@ ul.features-list li:before {
 .testimonials-section li img {
   width: 5em;
   height: 5em;
-  border: 5px solid #006BD6;
+  border: 5px solid #1f9e30;
   border-radius: 50%;
   margin-top: -4.5em;
 }
 
-h2 {
-  font-size: 2em;
-}
 
 label {
   display: block;
@@ -270,9 +283,7 @@ nav li a:hover {
   .navbar nav ul.primary-nav {
     margin: 0;
   }
-  .navbar nav li.current a {
-    font-weight: bold;
-  }
+
   .navbar nav li.go-premium-cta a {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
@@ -294,7 +305,7 @@ nav li a:hover {
   section {
     padding: 10em 4em;
   }
-  .hero .container {
+  #hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -303,18 +314,18 @@ nav li a:hover {
             justify-content: space-between;
     text-align: left;
   }
-  .hero .container .left-col {
+  #hero .container .left-col {
     margin: 3em 3em 0 5em;
   }
-  .hero .container .left-col h1 {
+  #hero .container .left-col h1 {
     font-size: 3em;
     width: 90%;
   }
-  .hero-img {
+  #hero-img {
     width: 30%;
     margin-right: 8em;
   }
-  .hero-cta {
+  #hero-cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -333,15 +344,16 @@ nav li a:hover {
     width: 30px;
     height: 30px;
   }
-  .features-section {
+  #features-section {
     position: relative;
   }
-  .features-section img {
+  #features-section img 
+  {    
     display: block;
     position: absolute;
     right: 0;
-    width: 350px;
-    bottom: -2em;
+    width: 450px;
+    bottom: -5em;
   }
   .testimonials-section ul {
     display: -webkit-box;
@@ -370,9 +382,102 @@ nav li a:hover {
     height: 100%;
   }
 }
+.logo 
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+.logo span
+{  
+  color: var(--primary-color);
+
+}
+
+.move
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: -10px;
+  width: 100%; 
+  padding: 0.1em;
+  place-content: end space-between ;
+  z-index: 999;
+  background-color: #A7A7A7;
+  border-top: 2px solid #288f08;
+}
+
+.Bottom-button
+{
+  color: var(--primary-color);
+  border: 0.5em solid var(--primary-color);
+  font-weight: bold;  
+  border-radius: 1em;
+  margin-top: 0;  
+}
+.Bottom-button a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1em;
+  padding: .1em 1em;
+}
+.Bottom-button a:hover 
+{
+  background: var(--primary-color);
+  color: white;
+  
+}
+
+.wight
+{
+  width: 70%;
+  place-content: space-between;
+}
+.wightdos
+{
+  margin: 0.8em;
+  margin-right: 2em;  
+  text-align: right;
+  
+}
+.containerbottom .wight .primary-nav-bottom
+{    
+  
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-evenly;
+  
+}
+
+
+.Face
+{
+  margin-left: 1em; 
+  width: 2em; 
+}
+.insta
+{
+  margin-left: 1em; 
+  width: 2em;
+}
+.whats
+{  
+  margin-left: 1em; 
+  width: 2em;
+}
+.footer
+{
+  padding: 5em;
+}
+
 
 @media only screen and (min-width: 1450px) {
-  .features-section:before {
+  #features-section:before {
     content: '';
     position: absolute;
     width: 10%;
@@ -381,7 +486,7 @@ nav li a:hover {
     left: 0;
     top: -4em;
   }
-  .features-section:after {
+  #features-section:after {
     content: '';
     position: absolute;
     width: 200px;
