@@ -82,12 +82,13 @@ section {
   display: inline-block;
 }
 
-.left-col .watch-video-cta {
+.left-col .hero-cta .watch-video-cta {
   display: block;
   margin-top: 1em;
 }
 
-.left-col .watch-video-cta img {
+.left-col .hero-cta .watch-video-cta img {
+  margin-left: 5em;
   margin-right: .5em;
 }
 
